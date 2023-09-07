@@ -15,18 +15,17 @@ You may have to install the following libaries:
 
 ### <a href="https://pillow.readthedocs.io/en/stable/index.html" title="Pillow" target="_blank">Pillow</a>
 ```
-python3 -m pip install --upgrade pip
-python3 -m pip install --upgrade Pillow
+python3 -m pip install Pillow
 ```
 
 ### <a href="https://docs.python.org/3/library/argparse.html" title="Argsparse" target="_blank">Argsparse</a>
 ```
-pip install argparse
+python3 -m pip install argparse
 ```
 
 ### <a href="https://pypi.org/project/tabulate/" title="Tabulate" target="_blank">Tabulate</a>
 ```
-pip install tabulate
+python3 -m pip install tabulate
 ```
 
 ## Usage
@@ -59,37 +58,37 @@ The Image Converter usess the following image filter:
 Converts the file bild.jpg to bild.webp and saves it in the same directory:
 
 ```
-python project.py -file bild.jpg -to webp
+python3 project.py -file bild.jpg -to webp
 ```
 
 Converts the file bild.jpg to another_file.gif and saves it in the same directory:
 
 ```
-python project.py -file bild.jpg -to gif -name another_file
+python3 project.py -file bild.jpg -to gif -name another_file
 ```
 
 Converts the file bild.jpg to another_file.gif and saves it in the same directory:
 
 ```
-python project.py -file bild.jpg -to gif -name another_file
+python3 project.py -file bild.jpg -to gif -name another_file
 ```
 
 Converts the file bild.jpg to another_file.gif and saves it in ./new-dir/:
 
 ```
-python project.py -file bild.jpg -to gif -name another_file -dir new-dir/
+python3 project.py -file bild.jpg -to gif -name another_file -dir new-dir/
 ```
 
 Converts the file bild.jpg to another_file.gif and saves it in ./new-dir/:
 
 ```
-python project.py -file bild.jpg -to gif -name another_file -dir new-dir/
+python3 project.py -file bild.jpg -to gif -name another_file -dir new-dir/
 ```
 
 Converts the file bild.jpg to another_file.gif, saves it in ./../project/web-images/webp/ and uses a black and white filter:
 
 ```
-python project.py -file bild.jpg -to webp -name another_file -dir ../project/web-images/webp/ -filter bw
+python3 project.py -file bild.jpg -to webp -name another_file -dir ../project/web-images/webp/ -filter bw
 ```
 
 ### Convert multiple images with the same file format
@@ -97,25 +96,25 @@ python project.py -file bild.jpg -to webp -name another_file -dir ../project/web
 Converts all images with the file format jpg to webp and saves it with the same name than the source file in ./_image_converter_webp:
 
 ```
-python project.py -dir web/ -type jpg -to webp
+python3 project.py -dir web/ -type jpg -to webp
 ```
 
 Converts all images with the file format jpg to webp, uses the blur filter and saves it with the same name than the source file in ./_image_converter_webp:
 
 ```
-python project.py -dir web/ -type jpg -to webp -filter blur
+python3 project.py -dir web/ -type jpg -to webp -filter blur
 ```
 
 ### Create a thumbnail from a single image
 
 Creates a thumbnail with the name bild_thumb_225x175.gif from the image bild.jpg in the same directory:
 ```
-python project.py -thumb 225 175 -file bild.jpg -to gif
+python3 project.py -thumb 225 175 -file bild.jpg -to gif
 ```
 
 Creates a thumbnail with the name bild_thumb_225x175.gif with the dimenssions 225 x 175px from the image bild.jpg in the same directory and uses the sharpen filter:
 ```
-python project.py -thumb 225 175 -file bild.jpg -to gif -filter sharpen
+python3 project.py -thumb 225 175 -file bild.jpg -to gif -filter sharpen
 ```
 
 ### Create multiple thumbnail from images with the same file format in a folder
@@ -123,7 +122,7 @@ python project.py -thumb 225 175 -file bild.jpg -to gif -filter sharpen
 Creates a thumbnail from every file with the format jpeg in the folder _jpeg/ with the format 400 x 300px and saves it in _thumbs_webp:
 
 ```
-python project.py -thumb 400 300 -dir _jpeg/ -to webp -type jpeg
+python3 project.py -thumb 400 300 -dir _jpeg/ -to webp -type jpeg
 ```
 
 
