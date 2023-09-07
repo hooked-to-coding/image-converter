@@ -1,5 +1,5 @@
 # Image Converter
-Image Converter is a CLI tool, build in python, that converts single images or a stack of images in a folder in a another file format. It also can be used to create fast and easy thumbails from single images as well as from a stack of images. If you like, use filter such as blur, black and white, sharpen.
+Image Converter is a CLI tool, build in python, that converts single images or a stack of images in a folder in a another file format. It also can be used to create fast and easy thumbnails from single images as well as from a stack of images. If you like, use filter such as blur, black and white, sharpen.
 
 This tool was developed as final project for Harvard's CS50’s Introduction to Programming with Python.
 
